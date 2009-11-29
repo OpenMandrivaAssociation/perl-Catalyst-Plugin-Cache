@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Catalyst)
+BuildRequires: perl(Class::Data::Inheritable)
 BuildRequires: perl(MRO::Compat)
 BuildRequires: perl(Storable)
 BuildRequires: perl(Task::Weaken)
@@ -19,6 +20,7 @@ BuildRequires: perl(Test::Deep)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(ok)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -36,11 +38,10 @@ subsidiary plugins.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -54,5 +55,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
