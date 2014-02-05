@@ -1,2 +1,4 @@
+removed_sources:
+  Catalyst-Plugin-Cache-0.10.tar.gz: 3c09e93e4a8e96c30a4f6748cf91d23bb8b1c8e2
 sources:
-  "Catalyst-Plugin-Cache-0.10.tar.gz": 3c09e93e4a8e96c30a4f6748cf91d23bb8b1c8e2
+  Catalyst-Plugin-Cache-0.12.tar.gz: d16912805963c56e5975d92f7c82be7e9b0aece9
