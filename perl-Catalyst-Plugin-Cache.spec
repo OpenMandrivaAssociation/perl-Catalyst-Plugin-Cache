@@ -2,14 +2,14 @@
 %define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Choose a cache backend based on key regexes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Plugin-Cache-%{upstream_version}.tar.gz
+Url:		https://git.shadowcat.co.uk/catagits/Catalyst-Plugin-Cache
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-Cache-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
