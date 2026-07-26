@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-Plugin-Cache
-%define upstream_version 0.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.12
+Release:	5
 
 Summary:	Choose a cache backend based on key regexes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://git.shadowcat.co.uk/catagits/Catalyst-Plugin-Cache
-Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-Cache-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-Cache-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -35,7 +33,7 @@ component or controller, keyspace partitioning, and so more, in various
 subsidiary plugins.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
